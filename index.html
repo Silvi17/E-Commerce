@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Perfumes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+        <link rel="stylesheet" href="./Assets/CSS/front.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./Assets/CSS/style.css" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body id="index" class="lang-es country-ar currency-ars layout-full-width page-index tax-display-disabled">
+        <div id="mbbx-container"></div>
+        <main>
+            <header id="header" class="fixed">
+                <nav class="header-nav">
+                    <div id="custom-text">
+                        <div class="custom-container slick-initialized slick-slider">
+                            <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+                            <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="hidden-md-up text-sm-center mobile">
+                        <div class="top-logo" id="_mobile_logo">
+                            <h1>
+                                <a href="./index.html">
+                                    <img src="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+                                </a>
+                            </h1>
+                        </div>
+                        <div class="float-xs-right icon" id="_mobile_search">
+                            <img src="./Assets/Imagenes/Iconos/search.svg" alt="">
+                        </div>
+                        <div class="float-xs-right" id="_mobile_cart">
+                            <div class="blockcart cart-preview active" data-refresh-url="//todoslosperfumes.com.ar/module/ps_shoppingcart/ajax">
+                                <div class="header">
+                                    <a rel="nofollow" href="./carrito.html">
+                                        <div class="icon">
+                                            <img src="./Assets/Imagenes/Iconos/carrito.svg" alt="Carrito">
+                                        </div>  
+                                        <span class="cart-products-count">0</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-xs-right" id="_mobile_user_info">
+                            <div class="user-info">
+                                <a href="./iniciar-sesion.html" title="Acceda a su cuenta de cliente" rel="nofollow">
+                                    <div class="icon">
+                                        <img src="./Assets/Imagenes/Iconos/user.svg" alt="Mi Cuenta">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
+                            <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
+                            <div class="js-top-menu-bottom">
+                                <div id="_mobile_currency_selector"></div>
+                                <div id="_mobile_language_selector"></div>
+                                <div id="_mobile_contact_link"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 hidden-sm-down" id="_desktop_logo">
+                                <h1>
+                                    <a href="./index.html">
+                                        <img class="logo img-responsive" src="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png" alt="Todos los Perfumes">
+                                    </a>
+                                </h1>
+                            </div>
+                            <div class="col-sm-4">
+                                <div id="search_widget" class="search-widgets"
+                                    data-search-controller-url="//todoslosperfumes.com.ar/busqueda">
+                                    <form method="get" action="//todoslosperfumes.com.ar/busqueda">
+                                        <input type="hidden" name="controller" value="search">
+                                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+                                        <input type="text" name="s" value="" placeholder="Búsqueda en catálogo" aria-label="Buscar" class="ui-autocomplete-input" autocomplete="off">
+                                        <i class="material-icons clear" aria-hidden="true" style="display: none;">clear</i>
+                                        <div class="icon search">
+                                            <img src="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png" alt="Buscar">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-4 position-static">
+                                <div id="_desktop_user_info">
+                                    <div class="user-info">
+                                        <a href="./iniciar-sesion.html" title="Acceda a su cuenta de cliente" rel="nofollow">
+                                            <div class="icon">
+                                                <img src="./Assets/Imagenes/Iconos/user.svg" alt="Mi Cuenta">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="_desktop_cart">
+                                    <div class="blockcart cart-preview active"
+                                        data-refresh-url="//todoslosperfumes.com.ar/module/ps_shoppingcart/ajax">
+                                        <div class="header">
+                                            <a rel="nofollow" href="./carrito.html">
+                                                <div class="icon">
+                                                    <img src="./Assets/Imagenes/Iconos/carrito.svg" alt="Carrito">
+                                                </div>
+                                                <span class="cart-products-count">0</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="wrapper">
+                <div id="content-wrapper">
+                    <section id="main">
+                        <section id="content" class="page-home">
+                            <section class="featured-products tp-featured-products">
+                                <input type="hidden" name="promotionActive" id="promotionActive" value="1">
+                                <input type="hidden" name="promotionActive" id="promotionActive" value="1">
+                                <h2 class="h2 products-section-title text-uppercase">Noviembre Irresistible</h2>
+                                <h4></h4>
+
+                                <div class="products">
+                                    <article class="product-miniature js-product-miniature" data-id-product="3497"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/set-azzaro-edt-100.jpg" alt="set azzaro edt 100">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $25220 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$21.437</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-15%</li>
+                                                <li class="product-flag flag-special" style="background: #ff471a">exclusivo web!!!</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3494"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/le-male-pride-edt-125.jpg" alt="le male pride edt 125">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $27100 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$23.035</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-15%</li>
+                                                <li class="product-flag flag-special" style="background: #ff471a">exclusivo web!!!</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3496"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/quatre-edt-100.jpg" alt="quatre edt 100">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $23700 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$21.330</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-10%</li>
+                                                <li class="product-flag flag-special" style="background: #ff471a">exclusivo web!!!</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3499"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                            <div class="thumbnail-container">
+                                                <a href="#" class="thumbnail product-thumbnail">
+                                                    <img src="./Assets/Imagenes/Perfumes/the-one-sport-edt-150.jpg" alt="the one sport edt 150">
+                                                </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $38000 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$32.300</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-15%</li>
+                                                <li class="product-flag flag-special" style="background: #ff471a">exclusivo web!!!</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3491"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/energize-edt-125.jpg" alt="energize edt 125">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $30000 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$25.500</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-15%</li>
+                                                <li class="product-flag flag-special" style="background: #ff471a">exclusivo web!!!</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div style="text-align: center;margin-top: 50px;">
+                                    <a href="./noviembre-irresistible.html" class="btn btn-primary">Ver todo</a>
+                                </div>
+                            </section>
+                            <section class="featured-products clearfix">
+                                <h2 class="h2 products-section-title text-uppercase">Productos Destacados</h2>
+                                <div class="products">
+                                    <article class="product-miniature js-product-miniature" data-id-product="3346"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/l-imperatrice-edt-100.jpg" alt="L'imperatrice edt 100">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $32070 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$16.990</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-47%</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3412"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/versace-women-edp-100.jpg" alt="Versace Woman edp 100">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $20050 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/efvo-tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$14.000</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-30%</li>
+                                            </ul>
+                                        </div>
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3464"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/my-way-intense-edp-90.jpg" alt="My Way Intense edp 90">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista"></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price cod">
+                                                        <strong class="icon">
+                                                            <img src="./Assets/Imagenes/Iconos/efectivo.svg" alt="efectivo">
+                                                        </strong>
+                                                        <span>$30.510</span>
+                                                    </span>
+                                                    <span class="sr-only">Precio base</span>
+                                                    <span class="regular-price">
+                                                        <span class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/tarjeta.svg" alt="tarjeta">
+                                                        </span>
+                                                        $33.900
+                                                    </span>
+                                                    <span class="discount-percentage discount-product">-10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3461"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/olympea-solar-edp-80.jpg" alt="Olympea Solar edp 80">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista"></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price cod">
+                                                        <strong class="icon">
+                                                            <img src="./Assets/Imagenes/Iconos/efectivo.svg" alt="efectivo">
+                                                        </strong>
+                                                        <span>$31.140</span>
+                                                    </span>
+                                                    <span class="sr-only">Precio base</span>
+                                                    <span class="regular-price">
+                                                        <span class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/tarjeta.svg"alt="tarjeta">
+                                                        </span>
+                                                        $34.600
+                                                    </span>
+                                                    <span class="discount-percentage discount-product">-10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="3415"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/esencia-loewe-edt-100.jpg" alt="Esencia Loewe edt 100">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista"></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price cod">
+                                                        <strong class="icon">
+                                                            <img src="./Assets/Imagenes/Iconos/efectivo.svg" alt="efectivo">
+                                                        </strong>
+                                                        <span>$23.841</span>
+                                                    </span>
+                                                    <span class="sr-only">Precio base</span>
+                                                    <span class="regular-price">
+                                                        <span class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/tarjeta.svg" alt="tarjeta">
+                                                        </span>
+                                                        $26.490
+                                                    </span>
+                                                    <span class="discount-percentage discount-product">-10%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+
+                                    <article class="product-miniature js-product-miniature" data-id-product="55"
+                                        data-id-product-attribute="0" itemscope="" itemtype="https://schema.org/Product">
+                                        <div class="thumbnail-container">
+                                            <a href="#" class="thumbnail product-thumbnail">
+                                                <img src="./Assets/Imagenes/Perfumes/nautica-voyage-edt-100.jpg" alt="Nautica Voyage edt 100">
+                                            </a>
+                                            <div class="product-description">
+                                                <small class="precio-lista">Precio de lista:<strike> $10990 </strike></small>
+                                                <div class="product-price-and-shipping">
+                                                    <span class="sr-only">Precio</span>
+                                                    <span itemprop="price" class="price efvo-card">
+                                                        <!---->
+                                                        <strong class="icon" style="margin-right: 5px;">
+                                                            <img src="./Assets/Imagenes/Iconos/tarjeta.svg" alt="tarjeta">
+                                                        </strong>
+                                                        <span>$6.490</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <ul class="product-flags">
+                                                <li class="product-flag on-sale">-41%</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="product-information" style="">
+                                            <div class="product-actions">
+                                                <form action="./carrito.html" method="post" id="add-to-cart-or-refresh">
+                                                    <input type="hidden" name="token" value="baa104f4fd5c777089346dadbc747058">
+                                                    <input type="hidden" name="id_product" value="3491" id="product_page_product_id">
+                                                    <input type="hidden" name="id_customization" value="0" id="product_customization_id">
+                                                    <div class="product-variants"></div>
+                                                    <section class="product-discounts"></section>
+                                                    <div class="product-add-to-cart">
+                                                        <span class="control-label">Cantidad</span>
+                                                        <div class="product-quantity clearfix">
+                                                            <div class="qty">
+                                                                <div class="input-group bootstrap-touchspin">
+                                                                    <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                                                                    <input type="number" name="qty" id="quantity_wanted" value="1" class="input-group form-control" min="1" aria-label="Cantidad">
+                                                                    <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                                                </div>
+                                                            </div>
+                                
+                                                            <div class="add">
+                                                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">Agregar
+                                                                    <span class="icon">
+                                                                        <img src="./Assets/Imagenes/Iconos/carrito-fondo-blanco.svg" alt="Carrito">
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <span id="product-availability"></span>
+                                                        <p class="product-minimal-quantity"></p>  
+                                                    </div>
+                                                </form>
+                                            </div>               
+                                        </div>
+                                    </article>
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact-me">
+                <h3 class="contact-me__title">Desarrollado por</h3>
+                <ul class="contact-me__item">
+                    <li class="contact-me__item">
+                        <a href="https://silvi17.github.io/Portafolio/">Silvana Gabriela González López</a>
+                    </li>
+                    <li class="contact-me__item">
+                        <div class="contact-me__social-media">
+                            <a href="https://www.linkedin.com/in/silvana-gonzalez-lopez/" target="_blank" rel="noopener">
+                                <img src="./Assets/Imagenes/logo-linkedin.svg" alt="icono de linkedin">
+                            </a>
+                            <a href="https://github.com/Silvi17/" target="_blank" rel="noopener">
+                                <img src="./Assets/Imagenes/logo-github.svg" alt="icono de github">
+                            </a>
+                            <a href="https://www.instagram.com/silvi.gonzalez/" target="_blank" rel="noopener">
+                                <img src="./Assets/Imagenes/logo-instagram.png" alt="icono de instagram">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./Assets/Javascript/front.js"></script>
+    </body>
+</html>

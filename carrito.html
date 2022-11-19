@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Carrito</title>      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+        <link rel="stylesheet" href="./Assets/CSS/front.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./Assets/CSS/style.css" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <main>
+            <section id="wrapper">
+                <!---->
+                <div id="content-wrapper">
+                    <section id="main">
+                        <div class="cart-grid row">
+                            <!-- Left Block: cart product informations & shpping -->
+                            <div class="cart-grid-body col-xs-12 col-lg-8">
+    
+                                <!-- cart products detailed -->
+                                <div class="card cart-container">
+                                    <div class="card-block">
+                                        <h1 class="h1">Carrito</h1>
+                                    </div>
+                                    <hr class="separator">
+                       
+                                    <div class="cart-overview js-cart" data-refresh-url="//todoslosperfumes.com.ar/carrito?ajax=1&amp;action=refresh">
+                                        <span class="no-items">No hay más artículos en su carrito</span>
+                                    </div>  
+                                </div>
+            
+                                <a class="label" href="./index.html">
+                                    <i class="material-icons">chevron_left</i>Continuar comprando
+                                </a>
+                                <!-- shipping informations -->  
+                            </div>
+    
+                            <!-- Right Block: cart subtotal & cart total -->
+                            <div class="cart-grid-right col-xs-12 col-lg-4">
+                                <div class="card cart-summary">             
+                                    <div class="cart-detailed-totals">
+                                        <div class="card-block">
+                                            <div class="cart-summary-line" id="cart-subtotal-products">
+                                                <span class="label js-subtotal">0 artículos</span>
+                                                <span class="value">$0</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-block cart-summary-totals">
+                                            <div class="cart-summary-line cart-total">
+                                                <span class="label">Total&nbsp;</span>
+                                                <span class="value">$0</span>
+                                            </div>
+                                        </div>  
+                                    </div>         
+                                    <div class="checkout text-sm-center card-block">
+                                        <button type="button" class="btn btn-primary disabled" disabled="">Finalizar Pedido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

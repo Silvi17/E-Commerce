@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Iniciar Sesión</title>      
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+        <link rel="shortcut icon" type="image/x-icon" href="./Assets/Imagenes/Iconos/logo-nuevo-removebg-preview.png">
+        <link rel="stylesheet" href="./Assets/CSS/front.css" type="text/css" media="all">
+        <link rel="stylesheet" href="./Assets/CSS/style.css" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <section id="wrapper">
+            <!---->
+        
+        <div id="content-wrapper">
+            <section id="main">
+                <header class="page-header">
+                    <h1>Iniciar sesión con su cuenta</h1>
+                </header>
+                <section id="content" class="page-content card card-block">
+                    <section class="login-form">
+                        <form id="login-form" action="./iniciar-sesion.html" method="post">
+                            <section>
+                                <input type="hidden" name="back" value="my-account">          
+                                <div class="form-group row ">
+                                    <label class="col-md-3 form-control-label required">Dirección de correo electrónico</label>
+                                    <div class="col-md-6">
+                                      <input class="form-control" name="email" type="email" value="" required="">
+                                    </div>
+                                    <div class="col-md-3 form-control-comment"></div>
+                                </div>            
+                                        
+                                <div class="form-group row ">
+                                    <label class="col-md-3 form-control-label required">Contraseña</label>
+                                    <div class="col-md-6">
+                                        <div class="input-group js-parent-focus">
+                                            <input class="form-control js-child-focus js-visible-password" name="password" title="Longitud de al menos 5 caracteres" type="password" value="" pattern=".{5,}" required="">
+                                            <span class="input-group-btn">
+                                                <button class="btn" type="button" data-action="show-password" data-text-show="Mostrar" data-text-hide="Ocultar">Mostrar</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 form-control-comment"></div>
+                                </div>        
+                                <div class="forgot-password">
+                                    <a href="./recuperar-contraseña.html" rel="nofollow">¿Olvidó su contraseña?</a>
+                                </div>
+                            </section>
+
+                            <footer class="form-footer text-sm-center clearfix">
+                                <input type="hidden" name="submitLogin" value="1">
+                                <button id="submit-login" class="btn btn-primary" data-link-action="sign-in" type="submit">Iniciar sesión<button>   
+                            </footer>
+                        </form>
+                    </section>
+                </section>
+            </section>     
+        </div>
+    </body>
+</html>
